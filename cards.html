@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel = "stylesheet" href="cards.css">
+</head>
+
+
+
+<body>
+  <h1>Parallax Tilt Effect Cards</h1>
+  <p>Hover over the cards.</p>
+
+  <section class="main">
+    <a href="http://www.github.com" target="_blank" >
+      <div class="move_effect">
+        <div class="wrap wrap--1">
+          <div class="container container--1 bg1">
+            <p>Task_01</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <div class="move_effect">
+      <div class="wrap wrap--2">
+        <div class="container container--1 bg2">
+          <p>Task_02</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="move_effect">
+      <div class="wrap wrap--2">
+        <div class="container container--1 bg3">
+          <p>Task_03</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="move_effect">
+      <div class="wrap wrap--2">
+        <div class="container container--1 bg4">
+          <p>Task_04</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="move_effect">
+      <div class="wrap wrap--3">
+        <div class="container container--1 bg5">
+          <p>Task_05</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+   
+
+    
+  </section>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".move_effect"), {
+      max: 25,
+      speed: 400
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".move_effect"));
+  </script>
+<a href="https://abubakersaeed.netlify.app/designs/d10-parallax-tilt-effect-cards" class="abs-site-link" rel="nofollow noreferrer" target="_blank">abs/designs/d10-parallax-tilt-effect-cards</a>
+</body>
+</html>
